@@ -85,14 +85,8 @@
     }
 
     @keyframes fadeInScale {
-      from {
-        opacity: 0;
-        transform: scale(0.8);
-      }
-      to {
-        opacity: 1;
-        transform: scale(1);
-      }
+      from { opacity: 0; transform: scale(0.8); }
+      to { opacity: 1; transform: scale(1); }
     }
 
     .logo-text {
@@ -136,14 +130,8 @@
     }
 
     @keyframes slideDown {
-      from {
-        transform: translateY(-100%);
-        opacity: 0;
-      }
-      to {
-        transform: translateY(0);
-        opacity: 1;
-      }
+      from { transform: translateY(-100%); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
     }
 
     nav a {
@@ -157,9 +145,7 @@
       position: relative;
     }
 
-    body.light-theme nav a {
-      color: #1a1a1a;
-    }
+    body.light-theme nav a { color: #1a1a1a; }
 
     nav a::before {
       content: '';
@@ -178,9 +164,7 @@
       background: rgba(218, 165, 32, 0.1);
     }
 
-    nav a:hover::before {
-      width: 80%;
-    }
+    nav a:hover::before { width: 80%; }
 
     /* Theme Toggle */
     .theme-toggle {
@@ -220,14 +204,8 @@
     }
 
     @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     .about-section h2 {
@@ -247,9 +225,7 @@
       margin: 0 auto 2rem;
     }
 
-    body.light-theme .about-section p {
-      color: rgba(26, 26, 26, 0.8);
-    }
+    body.light-theme .about-section p { color: rgba(26, 26, 26, 0.8); }
 
     /* Features Grid */
     .features-grid {
@@ -287,10 +263,7 @@
       border-color: #DAA520;
     }
 
-    .feature-icon {
-      font-size: 3.5rem;
-      margin-bottom: 1.5rem;
-    }
+    .feature-icon { font-size: 3.5rem; margin-bottom: 1.5rem; }
 
     .feature-card h3 {
       font-size: 1.5rem;
@@ -304,9 +277,7 @@
       color: rgba(255, 255, 255, 0.7);
     }
 
-    body.light-theme .feature-card p {
-      color: rgba(26, 26, 26, 0.7);
-    }
+    body.light-theme .feature-card p { color: rgba(26, 26, 26, 0.7); }
 
     /* Locations Section */
     .locations-section {
@@ -317,9 +288,7 @@
       border: 1px solid rgba(218, 165, 32, 0.2);
     }
 
-    body.light-theme .locations-section {
-      background: rgba(218, 165, 32, 0.08);
-    }
+    body.light-theme .locations-section { background: rgba(218, 165, 32, 0.08); }
 
     .locations-section h2 {
       font-size: 2.5rem;
@@ -347,9 +316,7 @@
       transition: all 0.3s ease;
     }
 
-    body.light-theme .location-card {
-      background: rgba(255, 255, 255, 0.6);
-    }
+    body.light-theme .location-card { background: rgba(255, 255, 255, 0.6); }
 
     .location-card:hover {
       transform: scale(1.05);
@@ -362,14 +329,9 @@
       margin-bottom: 0.5rem;
     }
 
-    .location-card p {
-      font-size: 1rem;
-      color: rgba(255, 255, 255, 0.7);
-    }
+    .location-card p { font-size: 1rem; color: rgba(255, 255, 255, 0.7); }
 
-    body.light-theme .location-card p {
-      color: rgba(26, 26, 26, 0.7);
-    }
+    body.light-theme .location-card p { color: rgba(26, 26, 26, 0.7); }
 
     /* Tagline Section */
     .tagline-section {
@@ -390,14 +352,9 @@
       margin-bottom: 1rem;
     }
 
-    .tagline-section p {
-      font-size: 1.2rem;
-      color: rgba(255, 255, 255, 0.7);
-    }
+    .tagline-section p { font-size: 1.2rem; color: rgba(255, 255, 255, 0.7); }
 
-    body.light-theme .tagline-section p {
-      color: rgba(26, 26, 26, 0.7);
-    }
+    body.light-theme .tagline-section p { color: rgba(26, 26, 26, 0.7); }
 
     /* Footer */
     footer {
@@ -448,24 +405,22 @@
       color: #fff;
     }
 
-    body.light-theme .contact-item {
-      color: #1a1a1a;
-    }
+    body.light-theme .contact-item { color: #1a1a1a; }
 
     .contact-item:hover {
-      background: rgba(218, 165, 32, 0.2);
       transform: translateY(-3px);
       box-shadow: 0 10px 30px rgba(218, 165, 32, 0.3);
     }
 
-    .contact-icon {
-      font-size: 1.5rem;
-    }
+    /* Platform-specific hover colors */
+    .contact-item.whatsapp:hover { background: rgba(37, 211, 102, 0.2); }
+    .contact-item.instagram:hover { background: rgba(193, 53, 132, 0.2); }
+    .contact-item.facebook:hover { background: rgba(24, 119, 242, 0.2); }
 
-    .contact-item img {
-      width: 24px;
-      height: 24px;
-      border-radius: 50%;
+    .social-icon {
+      width: 28px;
+      height: 28px;
+      flex-shrink: 0;
     }
 
     .copyright {
@@ -476,65 +431,25 @@
       font-size: 0.9rem;
     }
 
-    body.light-theme .copyright {
-      color: rgba(26, 26, 26, 0.6);
-    }
+    body.light-theme .copyright { color: rgba(26, 26, 26, 0.6); }
 
     /* Responsive Design */
     @media (max-width: 968px) {
-      .logo-text {
-        font-size: 3.5rem;
-      }
-
-      nav {
-        gap: 1rem;
-        padding: 1rem 3%;
-      }
-
-      nav a {
-        font-size: 0.9rem;
-        padding: 0.6rem 1rem;
-      }
-
-      .about-section h2 {
-        font-size: 2.2rem;
-      }
-
-      .features-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .contact-links {
-        flex-direction: column;
-        gap: 1rem;
-      }
+      .logo-text { font-size: 3.5rem; }
+      nav { gap: 1rem; padding: 1rem 3%; }
+      nav a { font-size: 0.9rem; padding: 0.6rem 1rem; }
+      .about-section h2 { font-size: 2.2rem; }
+      .features-grid { grid-template-columns: 1fr; }
+      .contact-links { flex-direction: column; gap: 1rem; align-items: center; }
     }
 
     @media (max-width: 576px) {
-      .logo-text {
-        font-size: 2.5rem;
-        letter-spacing: 4px;
-      }
-
-      .logo-tagline {
-        font-size: 1rem;
-      }
-
-      .hero-section {
-        height: 40vh;
-      }
-
-      nav a {
-        font-size: 0.85rem;
-      }
-
-      .about-section h2 {
-        font-size: 1.8rem;
-      }
-
-      .about-section p {
-        font-size: 1rem;
-      }
+      .logo-text { font-size: 2.5rem; letter-spacing: 4px; }
+      .logo-tagline { font-size: 1rem; }
+      .hero-section { height: 40vh; }
+      nav a { font-size: 0.85rem; }
+      .about-section h2 { font-size: 1.8rem; }
+      .about-section p { font-size: 1rem; }
     }
   </style>
 </head>
@@ -543,15 +458,13 @@
   <div class="particles" id="particles"></div>
 
   <!-- Theme Toggle Button -->
-  <button class="theme-toggle" onclick="toggleTheme()" title="Toggle Theme">
-    🌓
-  </button>
+  <button class="theme-toggle" onclick="toggleTheme()" title="Toggle Theme">🌓</button>
 
   <!-- Hero Section with Logo -->
   <div class="hero-section">
     <div class="logo-container">
       <div class="logo-text">ARMANI</div>
-      <div class="logo-tagline">CAR DEALERS</div>
+      <div class="logo-tagline">LUXURY CAR DEALERS</div>
     </div>
   </div>
 
@@ -584,19 +497,16 @@
         <h3>Luxury SUVs</h3>
         <p>Experience ultimate comfort and power with our premium collection of luxury SUVs.</p>
       </div>
-
       <div class="feature-card">
         <div class="feature-icon">🏎️</div>
         <h3>Sport Cars</h3>
         <p>Feel the thrill of speed and precision with our high-performance sports cars.</p>
       </div>
-
       <div class="feature-card">
         <div class="feature-icon">🎩</div>
         <h3>Classic Cars</h3>
         <p>Travel back in time with our stunning collection of 19th-century classic automobiles.</p>
       </div>
-
       <div class="feature-card">
         <div class="feature-icon">⚡</div>
         <h3>Electric Cars</h3>
@@ -638,22 +548,42 @@
   <footer>
     <div class="footer-content">
       <div class="footer-title">Get In Touch</div>
-      
+
       <div class="contact-links">
-        <a href="https://wa.me/254719238574" class="contact-item" target="_blank">
-          <span class="contact-icon">💬</span>
+
+        <!-- WhatsApp -->
+        <a href="https://wa.me/254719238574" class="contact-item whatsapp" target="_blank">
+          <svg class="social-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#25D366" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
           <span>WhatsApp: +254 719 238 574</span>
         </a>
 
-        <a href="https://www.instagram.com/arm_ani" class="contact-item" target="_blank">
-          <span class="contact-icon">📸</span>
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/arm_ani" class="contact-item instagram" target="_blank">
+          <svg class="social-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="ig-gradient" x1="0%" y1="100%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:#f09433"/>
+                <stop offset="25%" style="stop-color:#e6683c"/>
+                <stop offset="50%" style="stop-color:#dc2743"/>
+                <stop offset="75%" style="stop-color:#cc2366"/>
+                <stop offset="100%" style="stop-color:#bc1888"/>
+              </linearGradient>
+            </defs>
+            <path fill="url(#ig-gradient)" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+          </svg>
           <span>Instagram: @Arm_ani</span>
         </a>
 
-        <a href="https://www.facebook.com/armani" class="contact-item" target="_blank">
-          <span class="contact-icon">👥</span>
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/armani" class="contact-item facebook" target="_blank">
+          <svg class="social-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#1877F2" d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+          </svg>
           <span>Facebook: @Arm_ani</span>
         </a>
+
       </div>
 
       <div class="copyright">
@@ -665,56 +595,40 @@
   <script>
     // Create animated background particles
     const particlesContainer = document.getElementById('particles');
-    const particleCount = 40;
-
-    for (let i = 0; i < particleCount; i++) {
+    for (let i = 0; i < 40; i++) {
       const particle = document.createElement('div');
       particle.className = 'particle';
-      
       const size = Math.random() * 5 + 2;
-      const posX = Math.random() * 100;
-      const posY = Math.random() * 100;
-      const delay = Math.random() * 15;
-      
-      particle.style.width = `${size}px`;
-      particle.style.height = `${size}px`;
-      particle.style.left = `${posX}%`;
-      particle.style.top = `${posY}%`;
-      particle.style.animationDelay = `${delay}s`;
-      
+      particle.style.cssText = `
+        width: ${size}px;
+        height: ${size}px;
+        left: ${Math.random() * 100}%;
+        top: ${Math.random() * 100}%;
+        animation-delay: ${Math.random() * 15}s;
+      `;
       particlesContainer.appendChild(particle);
     }
 
-    // Theme Toggle Function
+    // Theme Toggle
     function toggleTheme() {
       document.body.classList.toggle('light-theme');
-      
-      // Save theme preference
-      const isLight = document.body.classList.contains('light-theme');
-      localStorage.setItem('theme', isLight ? 'light' : 'dark');
+      localStorage.setItem('theme', document.body.classList.contains('light-theme') ? 'light' : 'dark');
     }
 
-    // Load saved theme
     window.addEventListener('load', () => {
-      const savedTheme = localStorage.getItem('theme');
-      if (savedTheme === 'light') {
+      if (localStorage.getItem('theme') === 'light') {
         document.body.classList.add('light-theme');
       }
     });
 
-    // Smooth scroll for navigation
+    // Smooth scroll
     document.querySelectorAll('nav a').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
+      anchor.addEventListener('click', function(e) {
         const href = this.getAttribute('href');
         if (href.startsWith('#')) {
           e.preventDefault();
           const target = document.querySelector(href);
-          if (target) {
-            target.scrollIntoView({
-              behavior: 'smooth',
-              block: 'start'
-            });
-          }
+          if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
       });
     });
