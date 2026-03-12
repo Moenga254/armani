@@ -245,6 +245,7 @@
       transition: all 0.4s ease;
       animation: fadeInUp 1s ease;
       animation-fill-mode: both;
+      overflow: hidden;
     }
 
     body.light-theme .feature-card {
@@ -263,7 +264,28 @@
       border-color: #DAA520;
     }
 
-    .feature-icon { font-size: 3.5rem; margin-bottom: 1.5rem; }
+    /* Feature Card Image */
+    .feature-image-wrapper {
+      width: 100%;
+      height: 180px;
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 1.5rem;
+      border: 1px solid rgba(218, 165, 32, 0.2);
+      background: rgba(218, 165, 32, 0.05);
+    }
+
+    .feature-image-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    .feature-card:hover .feature-image-wrapper img {
+      transform: scale(1.05);
+    }
 
     .feature-card h3 {
       font-size: 1.5rem;
@@ -492,26 +514,43 @@
 
     <!-- Features Grid -->
     <div class="features-grid">
+
       <div class="feature-card">
-        <div class="feature-icon">🚙</div>
+        <!-- REPLACE src with your Luxury SUVs image path e.g. src="images/luxury-suv.jpg" -->
+        <div class="feature-image-wrapper">
+          <img src="YOUR_LUXURY_SUV_IMAGE.jpg" alt="Luxury SUVs">
+        </div>
         <h3>Luxury SUVs</h3>
         <p>Experience ultimate comfort and power with our premium collection of luxury SUVs.</p>
       </div>
+
       <div class="feature-card">
-        <div class="feature-icon">🏎️</div>
+        <!-- REPLACE src with your Sport Cars image path e.g. src="images/sport-car.jpg" -->
+        <div class="feature-image-wrapper">
+          <img src="YOUR_SPORT_CAR_IMAGE.jpg" alt="Sport Cars">
+        </div>
         <h3>Sport Cars</h3>
         <p>Feel the thrill of speed and precision with our high-performance sports cars.</p>
       </div>
+
       <div class="feature-card">
-        <div class="feature-icon">🎩</div>
+        <!-- REPLACE src with your Classic Cars image path e.g. src="images/classic-car.jpg" -->
+        <div class="feature-image-wrapper">
+          <img src="YOUR_CLASSIC_CAR_IMAGE.jpg" alt="Classic Cars">
+        </div>
         <h3>Classic Cars</h3>
         <p>Travel back in time with our stunning collection of 19th-century classic automobiles.</p>
       </div>
+
       <div class="feature-card">
-        <div class="feature-icon">⚡</div>
+        <!-- REPLACE src with your Electric Cars image path e.g. src="images/electric-car.jpg" -->
+        <div class="feature-image-wrapper">
+          <img src="YOUR_ELECTRIC_CAR_IMAGE.jpg" alt="Electric Cars">
+        </div>
         <h3>Electric Cars</h3>
         <p>Drive into the future with our eco-friendly, cutting-edge electric vehicles.</p>
       </div>
+
     </div>
 
     <!-- Locations Section -->
